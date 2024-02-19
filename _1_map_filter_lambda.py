@@ -1,74 +1,74 @@
-lst1 = [2,3,4,5,6,7,8,9,10]
+lst = [2,3,4,5,6,7,8,9,10]
 from functools import reduce
 
 # map 
 
-# def squre(lst):
-#     return lst ** 2
+def squre(lst):
+    return lst ** 2
 
-# map_lst = list(map(squre,lst))
-# print("Using normal map : ",map_lst)
+map_lst = list(map(squre,lst))
+print("Using normal map : ",map_lst)
 
-# filter
+filter
 
-# def even(lst):
-#     return lst % 2 ==0
+def even(lst):
+    return lst % 2 ==0
 
-# filter_lst = list(filter(even,lst))
-# print("Using normal filter : ",filter_lst)
+filter_lst = list(filter(even,lst))
+print("Using normal filter : ",filter_lst)
 
-# reduce
+reduce
 
-# def sum(lst,i):
-#     return lst + i
+def sum(lst,i):
+    return lst + i
 
-# sum_lst = reduce(sum,lst)
-# print("Using normal reduce : ",sum_lst)
+sum_lst = reduce(sum,lst)
+print("Using normal reduce : ",sum_lst)
 
-#lambda
+# lambda
 
-# sum = lambda a,b:a+b
-# print(sum(10,20))
+sum = lambda a,b:a+b
+print(sum(10,20))
 
-# str1 = 'Dipak'
+str1 = 'Dipak'
 
-# data = lambda a:"Yes string starts with 'D'" if a.startswith('D') else "No string doesn't starts with 'D'"
-# print(data(str1))
+data = lambda a:"Yes string starts with 'D'" if a.startswith('D') else "No string doesn't starts with 'D'"
+print(data(str1))
 
-# # filter lambda
+# filter lambda
 
-# even_lst = list(filter(lambda lst:lst%2==0,lst))
-# print("Using filter lambda : ",even_lst)
+even_lst = list(filter(lambda lst:lst%2==0,lst))
+print("Using filter lambda : ",even_lst)
 
-# # map lambda
+# map lambda
 
-# sq_lst = list(map(lambda lst:lst**2,lst))
-# print("Using map lambda : ",sq_lst)
+sq_lst = list(map(lambda lst:lst**2,lst))
+print("Using map lambda : ",sq_lst)
 
 # reduce lambda
 
-# sum_lst = reduce(lambda lst,i:lst+i,lst)
-# print("Using reduce lambda : ",sum_lst)
+sum_lst = reduce(lambda lst,i:lst+i,lst)
+print("Using reduce lambda : ",sum_lst)
 
-# lst = [4,5,6,8,9]
+lst = [4,5,6,8,9]
 
-# # output : ['even','odd','even','even','odd']
+# output : ['even','odd','even','even','odd']
 
-# data = list(map(lambda i:'even' if i%2==0 else 'odd',lst))
+data = list(map(lambda i:'even' if i%2==0 else 'odd',lst))
 
-# print(data)
+print(data)
 
-# lst = [12,15,17,30,22,25]
+lst = [12,15,17,30,22,25]
 
-# data = list(filter(lambda lst : lst%3==0 and lst%5==0,lst))
+data = list(filter(lambda lst : lst%3==0 and lst%5==0,lst))
 
-# print(data)
+print(data)
 
-# lst = ['apple','mango','banana']
+lst = ['apple','mango','banana']
 
-# data = list(map(lambda lst : lst[::-1],lst))
+data = list(map(lambda lst : lst[::-1],lst))
 
-# print(data)
+print(data)
 
 num = int(input("Enter number : "))
 num1 = str(num)

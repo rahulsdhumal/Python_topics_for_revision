@@ -1,13 +1,13 @@
 str1 = 'Python'
 # op : {'P':'p','Y':'y',...}
 
-# dict1 = {}
-# for i in str1:
-#     dict1[i.upper()] = i.lower()
-# print(dict1)
+dict1 = {}
+for i in str1:
+    dict1[i.upper()] = i.lower()
+print(dict1)
 
-# dict2 = {i.upper():i.lower() for i in str1 }
-# print(dict2)
+dict2 = {i.upper():i.lower() for i in str1 }
+print(dict2)
 
 keys = [1,2,3,4,5]
 values = [10,20,30,40,50]
